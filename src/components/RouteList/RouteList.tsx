@@ -5,11 +5,7 @@ import { Menu, Close } from "@mui/icons-material";
 import { TrackInfo } from "../../types/TrackInfo";
 
 const ScrollableStack = styled(Stack)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 90vh;
-  width: 100%;
   overflow: auto;
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */

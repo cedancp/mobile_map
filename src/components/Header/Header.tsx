@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ trackData }) => {
 
   return (
     <HeaderContainer>
-      <Title variant="h4">Mobile Map</Title>
+      <Title variant="h4">CanAirIO mobile map</Title>
       {trackData && (
         <TrackDataName variant="h6">{trackData.name}</TrackDataName>
       )}

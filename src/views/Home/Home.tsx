@@ -30,9 +30,6 @@ const PageContainer = styled(Box)`
 const ContentContainer = styled(Box)`
   display: flex;
   flex: 1;
-  // height: calc(100vh - 128px); /* Subtract header and footer height */
-  // margin-top: 64px; /* Header height */
-  // margin-bottom: 64px; /* Footer height */
 
   @media (max-width: 768px) {
     flex: 1;
@@ -74,7 +71,7 @@ const ToggleButton = styled(Button)`
 const RouteListContainer = styled(Box)`
   @media (max-width: 768px) {
     display: ${({ isVisible }: { isVisible: boolean }) =>
-      isVisible ? "block" : "none"};
+    isVisible ? "block" : "none"};
     position: absolute;
     top: 0;
     left: 0;
