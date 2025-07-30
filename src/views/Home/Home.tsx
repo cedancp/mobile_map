@@ -70,13 +70,16 @@ const ToggleButton = styled(Button)`
 
 const RouteListContainer = styled(Box)`
   @media (max-width: 768px) {
+    background-color: #f5f5f5;
     display: ${({ isVisible }: { isVisible: boolean }) =>
-    isVisible ? "block" : "none"};
+    isVisible ? "flex" : "none"};
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     position: absolute;
-    top: 0;
+    top: 5rem;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 80vh;
     z-index: 1001;
     overflow-y: auto;
   }
